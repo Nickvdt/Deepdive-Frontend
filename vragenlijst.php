@@ -1,3 +1,17 @@
+<?php
+include("functions.php");
+
+if(isset($_GET['question'])){
+  $current = $_GET['question'];
+}
+else
+{
+  $current = 1;
+}
+$question = GetDataByCurrentQuestion($current)['question'];
+
+$amountofquestion = GetAmountOfQuestions();
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -9,6 +23,7 @@
     <title>Vragenlijst</title>
 </head>
 <body>
+  
     <header class="header">
         <nav class="header__nav">
             <figure class="header__figure">
@@ -16,9 +31,11 @@
             </figure>
         </nav>
     </header>
+    <?php
+
+  ?>
     <section class="vragenlijst">
-        <h1 class="vragenlijst__h1">Vraag: 1. Ik droom ervan zo goed te zijn in wat ik doe dat er voortdurend om mijn
-            deskundige advies wordt gevraagd?</h1>
+        <h1 class="vragenlijst__h1"><?php echo $question?></h1>
         <section class="vragenlijst__labels">
             <p class="vragenlijst__label"> 1</p>
             <p class="vragenlijst__label"> 2</p>
@@ -28,7 +45,8 @@
             <p class="vragenlijst__label"> 6</p>
         </section>
         <section class="vragenlijst__slider">
-            <input type="range" min="1" max="6" step="1" value="1">
+          
+            <input onChange=UpdateData() id="js--updatedata" type="range" min="1" max="6" step="1" value="2">
         </section>
 
         <section class="vragenlijst__tabel">
@@ -52,9 +70,35 @@
             </table>
           </section>
           <section class="vragenlijst__buttons">
-            <button class="vragenlijst__button--previous">< Vorige</button>
-            <button class="vragenlijst__button--next">Volgende ></button>
+            <?php
+            if($current > 1){
+            ?>
+            <a href="vragenlijst.php?question=<?php echo $current - 1?>" class="vragenlijst__button--previous">< Vorige</a>
+            <?php
+            }
+            ?>
+            <?php
+            if($amountofquestion != $current){
+            ?>
+            <a href="vragenlijst.php?question=<?php echo $current + 1?>" class="vragenlijst__button--next">Volgende ></a>
+            <?php
+            }
+            ?>
           </section>
     </section>
 </body>
+
+<script>
+  if(localStorage.getItem(<?php echo $current?>) == null){
+    localStorage.setItem(<?php echo $current?>, 1)
+  }
+  document.getElementById("js--updatedata").value = localStorage.getItem(<?php echo $current?>);
+  function GetSetData(){
+    console.log(localStorage.getItem(<?php echo $current?>))
+    return localStorage.getItem(<?php echo $current?>)
+  }
+  function UpdateData(){
+    localStorage.setItem(<?php echo $current?>, document.getElementById('js--updatedata').value)
+  }
+  </script>
 </html>
