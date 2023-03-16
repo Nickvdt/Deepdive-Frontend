@@ -12,6 +12,99 @@ body {
   font-size: 2rem;
 }
 
-/* hier komt de base.scss */ /* hier komen de colors */ /* hier komen de mediaqueries */
+/* hier komt de base.scss */ /* hier komen de colors */
+.header {
+  width: 100%;
+  margin: auto;
+  background: #19AEAA;
+  margin-bottom: 3rem;
+}
+.header__a {
+  margin: 5rem;
+}
+
+.vragenlijst {
+  box-shadow: 0 0 1rem rgba(0, 0, 3, 0.3);
+  margin-top: 5rem;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.vragenlijst__h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+}
+.vragenlijst__labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.vragenlijst__label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.vragenlijst__slider {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.vragenlijst__slider input[type=range] {
+  width: 100%;
+  height: 1rem;
+  background-color: #ddd;
+  outline: none;
+}
+.vragenlijst__slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #19AEAA;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.vragenlijst__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.vragenlijst__tabel {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  overflow-x: auto;
+}
+.vragenlijst__tabel table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.vragenlijst__tabel table th,
+.vragenlijst__tabel table td {
+  padding: 1rem;
+  text-align: center;
+}
+.vragenlijst__tabel table th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+.vragenlijst__tabel table td {
+  border: 0.1rem solid #ddd;
+}
+.vragenlijst__button--previous, .vragenlijst__button--next {
+  padding: 1rem 2rem;
+  background-color: #19AEAA;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* hier komen de mediaqueries */
 
 /*# sourceMappingURL=style.css.map */

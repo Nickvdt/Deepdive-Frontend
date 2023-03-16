@@ -1,4 +1,6 @@
 @use "./abstracts/reset";
 @use "./base";
 @use "./abstracts/colors";
+@use "./components/header/header.scss";
+@use "./components/vragenlijst/vragenlijst.scss";
 @use "./abstracts/mediaqueries";
