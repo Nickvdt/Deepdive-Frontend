@@ -1,17 +1,4 @@
-<?php
-include("functions.php");
 
-if(isset($_GET['question'])){
-  $current = $_GET['question'];
-}
-else
-{
-  $current = 1;
-}
-$question = GetDataByCurrentQuestion($current)['question'];
-
-$amountofquestion = GetAmountOfQuestions();
-?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -31,11 +18,8 @@ $amountofquestion = GetAmountOfQuestions();
             </figure>
         </nav>
     </header>
-    <?php
-
-  ?>
     <section class="vragenlijst">
-        <h1 class="vragenlijst__h1"><?php echo $question?></h1>
+        <h1 id="js--vraag" class="vragenlijst__h1">Vrag: 1. Ik droom ervan zo goed te zijn in wat ik doe dat er voortdurend om mijn deskundige advies wordt gevraagd?</h1>
         <section class="vragenlijst__labels">
             <p class="vragenlijst__label"> 1</p>
             <p class="vragenlijst__label"> 2</p>
@@ -69,36 +53,24 @@ $amountofquestion = GetAmountOfQuestions();
               </tbody>
             </table>
           </section>
-          <section class="vragenlijst__buttons">
-            <?php
-            if($current > 1){
-            ?>
-            <a href="vragenlijst.php?question=<?php echo $current - 1?>" class="vragenlijst__button--previous">< Vorige</a>
-            <?php
-            }
-            ?>
-            <?php
-            if($amountofquestion != $current){
-            ?>
-            <a href="vragenlijst.php?question=<?php echo $current + 1?>" class="vragenlijst__button--next">Volgende ></a>
-            <?php
-            }
-            ?>
+          <section id="js--nextbuttons" class="vragenlijst__buttons">
+            <button id="js--previousbutton" class="vragenlijst__button--previous">< Vorige</button>
+            <button id="js--nextbutton" class="vragenlijst__button--next">Volgende ></button>
           </section>
     </section>
 </body>
 
 <script>
-  if(localStorage.getItem(<?php echo $current?>) == null){
-    localStorage.setItem(<?php echo $current?>, 1)
+  if(localStorage.getItem("vraag") == null){
+    localStorage.setItem("vraag", 1)
   }
-  document.getElementById("js--updatedata").value = localStorage.getItem(<?php echo $current?>);
+  document.getElementById("js--updatedata").value = localStorage.getItem("vraag");
   function GetSetData(){
-    console.log(localStorage.getItem(<?php echo $current?>))
-    return localStorage.getItem(<?php echo $current?>)
+    console.log(localStorage.getItem("vraag"))
+    return localStorage.getItem("vraag")
   }
   function UpdateData(){
-    localStorage.setItem(<?php echo $current?>, document.getElementById('js--updatedata').value)
+    localStorage.setItem("vraag", document.getElementById('js--updatedata').value)
   }
   </script>
 </html>
