@@ -1,0 +1,43 @@
+<?php
+$one = $_GET['one'];
+$two = $_GET['two'];
+$three = $_GET['three'];
+$four = $_GET['four'];
+$five = $_GET['five'];
+$six = $_GET['six'];
+$seven = $_GET['seven'];
+$eight = $_GET['eight'];
+$nine = $_GET['nine'];
+$ten = $_GET['ten'];
+$eleven = $_GET['eleven'];
+$twelve = $_GET['twelve'];
+$thirteen = $_GET['thirteen'];
+$fourteen = $_GET['fourteen'];
+$fifteen = $_GET['fifteen'];
+$sixteen = $_GET['sixteen'];
+$seventeen = $_GET['seventeen'];
+$eighteen = $_GET['eighteen'];
+$nineteen = $_GET['nineteen'];
+$twenty = $_GET['twenty'];
+$twentyone = $_GET['twentyone'];
+$twentytwo = $_GET['twentytwo'];
+$twentythree = $_GET['twentythree'];
+$twentyfour = $_GET['twentyfour'];
+$twentyfive = $_GET['twentyfive'];
+$twentysix = $_GET['twentysix'];
+$twentyseven = $_GET['twentyseven'];
+$twentyeight = $_GET['twentyeight'];
+$twentynine = $_GET['twentynine'];
+$thirty = $_GET['thirty'];
+$thirtyone = $_GET['thirtyone'];
+$thirtytwo = $_GET['thirtytwo'];
+$thirtythree = $_GET['thirtythree'];
+$thirtyfour = $_GET['thirtyfour'];
+$thirtyfive = $_GET['thirtyfive'];
+$thirtysix = $_GET['thirtysix'];
+$thirtyseven = $_GET['thirtyseven'];
+$thirtyeight = $_GET['thirtyeight'];
+$thirtynine = $_GET['thirtynine'];
+$forty = $_GET['forty'];
+
+?>
