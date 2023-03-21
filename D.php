@@ -1,7 +1,6 @@
 <?php
 include('var_dump.php');
 
-
 $one = $_GET['one'];
 $two = $_GET['two'];
 $three = $_GET['three'];
@@ -42,10 +41,8 @@ $thirty_seven = $_GET['thirtyseven'];
 $thirty_eight = $_GET['thirtyeight'];
 $thirty_nine = $_GET['thirtynine'];
 $forty = $_GET['forty'];
-$userid = 2;
-$approved = 1;
 
-$sql = "INSERT INTO `listanswers` (userid, approved, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty_one, twenty_two, twenty_three, twenty_four, twenty_five, twenty_six, twenty_seven, twenty_eight, twenty_nine, thirty, thirty_one, thirty_two, thirty_three, thirty_four, thirty_five, thirty_six, thirty_seven, thirty_eight, thirty_nine, forty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO `listanswers` (userid, approved, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty_one, twenty_two, twenty_three, twenty_four, twenty_five, twenty_six, twenty_seven, twenty_eight, twenty_nine, thirty, thirty_one, thirty_two, thirty_three, thirty_four, thirty_five, thirty_six, thirty_seven, thirty_eight, thirty_nine, forty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = $mysqli->prepare($sql);
 $stmt->bind_param("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii", $userid, $approved, $one, $two, $three, $four, $five, $six, $seven, $eight, $nine, $ten, $eleven, $twelve, $thirteen, $fourteen, $fifteen, $sixteen, $seventeen, $eighteen, $nineteen, $twenty, $twenty_one, $twenty_two, $twenty_three, $twenty_four, $twenty_five, $twenty_six, $twenty_seven, $twenty_eight, $twenty_nine, $thirty, $thirty_one, $thirty_two, $thirty_three, $thirty_four, $thirty_five, $thirty_six, $thirty_seven, $thirty_eight, $thirty_nine, $forty);
 $stmt->execute();
