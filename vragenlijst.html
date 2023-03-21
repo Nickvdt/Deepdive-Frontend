@@ -19,7 +19,7 @@
         </nav>
     </header>
     <section class="vragenlijst">
-        <h1 id="js--vraag" class="vragenlijst__h1">Vrag: 1. Ik droom ervan zo goed te zijn in wat ik doe dat er voortdurend om mijn deskundige advies wordt gevraagd?</h1>
+        <h1 id="js--vraag" class="vragenlijst__h1">Vraag: 1. Ik droom ervan zo goed te zijn in wat ik doe dat er voortdurend om mijn deskundige advies wordt gevraagd?</h1>
         <section class="vragenlijst__labels">
             <p class="vragenlijst__label"> 1</p>
             <p class="vragenlijst__label"> 2</p>
@@ -61,16 +61,8 @@
 </body>
 
 <script>
-  if(localStorage.getItem("vraag") == null){
-    localStorage.setItem("vraag", 1)
-  }
-  document.getElementById("js--updatedata").value = localStorage.getItem("vraag");
-  function GetSetData(){
-    console.log(localStorage.getItem("vraag"))
-    return localStorage.getItem("vraag")
-  }
   function UpdateData(){
-    localStorage.setItem("vraag", document.getElementById('js--updatedata').value)
+    localStorage.setItem(parseInt(localStorage.getItem("currentquestion")), document.getElementById('js--updatedata').value)
   }
   </script>
 </html>
