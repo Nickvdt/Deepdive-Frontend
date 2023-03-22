@@ -23,11 +23,7 @@ $username = $_SESSION['username'];
 
 
 <body>
-<a href="logout.php">uitloggen</a>
-<br>
-<a href="vragenlijst.php">vragenlijst</a>
-<br>
-<a href="results.php">resultaten</a>
+<a href="results/vragenlijstResult.php">vragenlijst resultaten</a>
 </body>
 
 </html>
