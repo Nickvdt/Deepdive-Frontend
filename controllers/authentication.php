@@ -27,9 +27,8 @@ if (!$endresult){
 if(password_verify($password, $hashedpassword)){
     session_start();
     $_SESSION['username']=$username;
-    echo "hi";
-    //header("Location: ../dashboard.php");
-    //die(); 
+    header("Location: ../dashboard.php");
+    die(); 
 }
 else
 {

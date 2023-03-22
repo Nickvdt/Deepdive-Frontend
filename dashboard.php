@@ -23,9 +23,9 @@ $username = $_SESSION['username'];
 
 
 <body>
-<?php
-echo "ingelogd";
-?>
+<a href="logout.php">uitloggen</a>
+<br>
+<a href="vragenlijst.php">vragenlijst</a>
 </body>
 
 </html>
