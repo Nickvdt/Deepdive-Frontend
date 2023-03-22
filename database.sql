@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `listanswers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` int(11) DEFAULT NULL,
   `approved` int(11) DEFAULT NULL,
+  `date` varchar(55) DEFAULT NULL,
   `one` int(11) DEFAULT NULL,
   `two` int(11) DEFAULT NULL,
   `three` int(11) DEFAULT NULL,
@@ -65,9 +66,18 @@ CREATE TABLE IF NOT EXISTS `listanswers` (
   `thirty_nine` int(11) DEFAULT NULL,
   `forty` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- Data exporting was unselected.
 
+-- Dumping structure for table deepdive_frontend.users
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(15) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `pfp` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
