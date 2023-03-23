@@ -1,7 +1,8 @@
+
+
 <?php
 include('../var_dump.php');
 include('functions.php');
-
 
 $one = $_GET['one'];
 $two = $_GET['two'];
@@ -59,6 +60,7 @@ $sql = "INSERT INTO `listanswers` (userid, approved, date, one, two, three, four
 $stmt = $mysqli->prepare($sql);
 $stmt->bind_param("iisiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii", $userid, $approved, $date, $one, $two, $three, $four, $five, $six, $seven, $eight, $nine, $ten, $eleven, $twelve, $thirteen, $fourteen, $fifteen, $sixteen, $seventeen, $eighteen, $nineteen, $twenty, $twenty_one, $twenty_two, $twenty_three, $twenty_four, $twenty_five, $twenty_six, $twenty_seven, $twenty_eight, $twenty_nine, $thirty, $thirty_one, $thirty_two, $thirty_three, $thirty_four, $thirty_five, $thirty_six, $thirty_seven, $thirty_eight, $thirty_nine, $forty);
 $stmt->execute();
-header("Location: ../dashboard.php");
-die(); 
+
+echo "<script defer>localStorage.clear(); window.location='http://localhost/Deepdive-Frontend/results.php';</script>";
+die();
 ?>

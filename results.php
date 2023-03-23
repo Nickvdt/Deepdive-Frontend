@@ -23,6 +23,8 @@ $username = $_SESSION['username'];
 
 
 <body>
+<a href="dashboard.php">dashboard</a>
+<br>
 <a href="results/vragenlijstResult.php">vragenlijst resultaten</a>
 </body>
 
