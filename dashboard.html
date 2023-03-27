@@ -1,0 +1,44 @@
+<?php
+
+include('var_dump.php');
+session_start();
+if (!isset($_SESSION['username'])) {
+    //header("Location: login.php");
+    //die();
+}
+$username = $_SESSION['username'];
+
+?>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/952855eefe.js" crossorigin="anonymous"></script>
+    <title>Doesburg Coaching</title>
+</head>
+
+
+<body>
+    <ul class="cards">
+        <li class="card card--first">
+            <i class="fa-solid fa-right-from-bracket"></i>
+    <a href="logout.php">uitloggen</a>
+        </li>
+    <li class="card card--second">
+        <i class="fa-solid fa-clipboard-question"></i>
+    <a href="vragenlijst.php">vragenlijst</a>
+    </li>
+    <li class="card card--third">
+        <i class="fa-solid fa-square-poll-vertical"></i>
+    <a href="results.php">resultaten</a>
+    </li>
+    </ul>
+
+</body>
+
+</html>
