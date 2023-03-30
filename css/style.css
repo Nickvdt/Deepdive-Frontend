@@ -32,7 +32,6 @@ body {
 }
 .vragenlijst__h1 {
   text-align: center;
-  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
@@ -68,6 +67,13 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
+.vragenlijst__slider ::-moz-range-thumb {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #19AEAA;
+  cursor: pointer;
+}
 .vragenlijst__buttons {
   display: flex;
   justify-content: space-between;
@@ -78,6 +84,9 @@ body {
   margin-bottom: 4rem;
   width: 100%;
   overflow-x: auto;
+}
+.vragenlijst__tabel--responsive {
+  display: none;
 }
 .vragenlijst__tabel table {
   border-collapse: collapse;
@@ -152,6 +161,42 @@ body {
   padding: 4rem;
 }
 
-/* hier komen de mediaqueries */
+@media screen and (max-width: 75rem) {
+  .vragenlijst {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .vragenlijst {
+    max-width: 90%;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .vragenlijst {
+    max-width: 100%;
+    padding: none;
+  }
+}
+@media screen and (max-width: 43.75rem) {
+  .vragenlijst__tabel--desktop {
+    display: none;
+  }
+  .vragenlijst__tabel--responsive {
+    display: block;
+  }
+  .vragenlijst__tabel table, .vragenlijst__tabel thead, .vragenlijst__tabel tbody, .vragenlijst__tabel th, .vragenlijst__tabel td, .vragenlijst__tabel tr {
+    display: block;
+    width: 100%;
+  }
+  .vragenlijst__tabel tr {
+    margin-bottom: 1.2rem;
+  }
+}
+@media screen and (max-width: 43.75rem) and (max-width: 31.25rem) {
+  .vragenlijst__button--previous, .vragenlijst__button--next {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,50 @@
-/* hier komen de mediaqueries */
+@media screen and (max-width: 75rem) {
+    .vragenlijst {
+      max-width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 62.5rem) {
+    .vragenlijst {
+      max-width: 90%;
+      box-shadow: none;
+    }
+  }
+  
+  @media screen and (max-width: 50rem) {
+    .vragenlijst {
+      max-width: 100%;
+      padding: none;
+    }
+  }
+  
+  @media screen and (max-width: 43.75rem) {
+    .vragenlijst{
+        &__tabel{
+            &--desktop{
+                display: none;
+            }
+            &--responsive{
+                display: block;
+            }
+            & table, thead, tbody, th, td, tr{
+                display: block;
+                width: 100%;
+            }
+            & tr{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+  
+    @media screen and (max-width: 31.25rem) {
+      .vragenlijst {
+        &__button--previous,
+        &__button--next {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  

@@ -4,84 +4,97 @@
     max-width: 60%;
     margin: 0 auto;
     padding: 5rem;
-
+    
     &__h1 {
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: bold;
-        margin-bottom: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3.5rem;
     }
-
+    
     &__labels {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
     }
-
+    
     &__label {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     }
-
+    
     &__slider {
-        width: 100%;
-        margin-bottom: 6rem;
+    width: 100%;
+    margin-bottom: 6rem;
     }
-
+    
     &__slider input[type="range"] {
-        width: 100%;
-        height: 1rem;
-        background-color: #ddd;
-        outline: none;
+    width: 100%;
+    height: 1rem;
+    background-color: #ddd;
+    outline: none;
     }
-
+    
     &__slider input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 2rem;
-        height: 2rem;
-        background-color: #19AEAA;
-        cursor: pointer;
-        border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: #19AEAA;
+    cursor: pointer;
+    border-radius: 50%;
     }
-
+    
+    &__slider ::-moz-range-thumb {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #19AEAA;
+    cursor: pointer;
+    }
+    
     &__buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
     }
+    
     &__tabel {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-        width: 100%;
-        overflow-x: auto;
-
-        table {
+        &--responsive {
+            display: none;
+          }
+          
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          width: 100%;
+          overflow-x: auto;
+          
+          table {
             border-collapse: collapse;
             width: 100%;
-
+          
             th,
             td {
-                padding: 1rem;
-                text-align: center;
+              padding: 1rem;
+              text-align: center;
             }
-
+          
             th {
-                background-color: #ddd;
-                font-weight: bold;
+              background-color: #ddd;
+              font-weight: bold;
             }
-
+          
             td {
-                border: 0.1rem solid #ddd;
+              border: 0.1rem solid #ddd;
             }
+          }
         }
-    }
-    &__button--previous,
-    &__button--next {
+
+        &__button--previous,
+        &__button--next {
         padding: 1rem 2rem;
         background-color: #19AEAA;
         color: #fff;
@@ -89,5 +102,5 @@
         border-radius: 0.2rem;
         font-size: 3rem;
         cursor: pointer;
-    }
-}
+        }
+        }
