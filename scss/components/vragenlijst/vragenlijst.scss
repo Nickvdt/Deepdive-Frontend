@@ -1,9 +1,12 @@
+@use "../../abstracts/animations";
 .vragenlijst {
     box-shadow: 0 0 1rem rgba(0, 0, 3, 0.3);
     margin-top: 5rem;
     max-width: 60%;
     margin: 0 auto;
     padding: 5rem;
+    @include animations.popupMixin;
+    border-radius: 1%;
     
     &__h1 {
     text-align: center;

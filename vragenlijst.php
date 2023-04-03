@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="header__nav">
             <figure class="header__figure">
-                <a class="header__a" href=""><img class="header__img" src="img/logo.png" alt="Logo van doesburg coaching" href=""></a>
+                <a class="header__a" href=""><img class="header__img" src="img/logo.webp" alt="Logo van doesburg coaching" href=""></a>
             </figure>
         </nav>
     </header>
