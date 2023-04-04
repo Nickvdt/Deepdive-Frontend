@@ -148,16 +148,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
 }
-.card--first {
-  width: 30rem;
-  height: 30rem;
-  padding: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.card--second {
+.card__first, .card__second, .card__third {
   width: 30rem;
   height: 30rem;
   padding: 4rem;
@@ -166,14 +157,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-.card--third {
-  width: 30rem;
-  height: 30rem;
+.card__first--a, .card__second--a, .card__third--a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 4rem;
+  text-decoration: none;
+  background: transparent;
+  color: black;
 }
 
 @media screen and (max-width: 75rem) {

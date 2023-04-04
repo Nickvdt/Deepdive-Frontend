@@ -32,21 +32,34 @@ $username = $_SESSION['username'];
     </header>
 
     <ul class="cards">
-        <li class="card card--first">
+        <li class="card card__first">
+          <a href="logout.php" class="card__first--a">
             <figure>
-                <img src="img/logout.webp" alt="" width="40rem">
+              <img src="img/lock.webp" alt="Afbeelding van een uitloggen icoon" width="70rem">
             </figure>
-            <a href="logout.php">uitloggen</a>
+            <span>Uitloggen</span>
+          </a>
         </li>
-        <li class="card card--second">
-            <img src="img/checklist.webp" alt="" width="40rem">
-            <a href="vragenlijst.php">vragenlijst</a>
+        
+        <li class="card card__second">
+          <a href="vragenlijst.php" class="card__second--a">
+            <figure>
+              <img src="img/writing_hand.webp" alt="Afbeelding van een checklist icoon" width="70rem">
+            </figure>
+            <span>Vragenlijst</span>
+          </a>
         </li>
-        <li class="card card--third">
-            <img src="img/analysis.webp" alt="" width="40rem">
-            <a href="results.php">resultaten</a>
+        
+        <li class="card card__third">
+          <a href="results.php" class="card__third--a">
+            <figure>
+              <img src="img/bar_chart.webp" alt="Afbeelding van een analyse icoon" width="70rem">
+            </figure>
+            <span>Resultaten</span>
+          </a>
         </li>
-    </ul>
+      </ul>
+      
 
 </body>
 
