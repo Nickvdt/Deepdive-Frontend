@@ -48,3 +48,36 @@
     }
   }
   
+
+  @media only screen and (max-width: 768px) {
+    .startpagina, .cards {
+      display: block;
+      height: auto;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
+    .startpaginaItem, .card {
+      margin-bottom: 5rem;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+      text-align: center;
+  
+      &__first,
+      &__second,
+      &__third {
+        width: 100%;
+        height: auto;
+      }
+  
+      &--a {
+        font-size: 1.5rem;
+      }
+  
+      .img__card {
+        width: 8rem;
+      }
+    }
+  }
+  

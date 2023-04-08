@@ -1,6 +1,6 @@
 @use "../../abstracts/animations";
 
-.cards {
+.cards, .startpagina {
     height: 85vh;
     display: grid;
     width: 100%;
@@ -14,7 +14,7 @@
     @include animations.popupMixin;
 }
 
-.card {
+.card, .startpaginaItem {
     list-style: none;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 1rem;
@@ -40,4 +40,8 @@
             color: black;
         }
     }
+}
+
+.img__card{
+    width: 10rem;
 }
