@@ -9,41 +9,37 @@
     <title>Doesburg Coaching</title>
 </head>
 <body>
-<section class="">
-
-        <div id="frm" class="form">
-            <h1 class="">Register :</h1>
-            <form name="f1" action="controllers/createuser.php" method="POST">
-                <p>
-                    <br>
-                    <label class=""> Username: </label>
-                    <br>
-                    <input class="" type="text" id="user" name="user" />
-                </p>
-                <p>
-                    <br>
-                    <label class=""> Password: </label>
-                    <br>
-                    <input class="" type="password" id="pass" name="pass" />
-                </p>
-                <p>
-                    <br>
-                    <label class=""> Repeat Password: </label>
-                    <br>
-                    <input class="" type="password" id="pass" name="pass2" />
-                </p>
-                <p class="">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <input class="" type="submit" id="btn" value="Register" />
-                </p>
-            </form>
-            <br>
+<header class="header">
+        <nav class="header__nav">
+            <figure class="header__figure">
+                <a class="header__a" href=""><img class="header__img" src="img/logo.webp" alt="Logo van doesburg coaching" href=""></a>
+            </figure>
+        </nav>
+    </header>
+    <main class="form__main">
+        <form class="form__login" name="f1" action="controllers/createuser.php" method="POST">
+            <h2 class="form__login--h2">Aanmelden</h2>
+            <div class="form__login--div">
+                <label for="username">Gebruikersnaam</label>
+                <input class="input__veld" type="text" id="user" name="user" required>
+            </div>
+            <div class="form__login--div">
+                <label for="password">Wachtwoord</label>
+                <input class="input__veld" type="password" id="pass" name="pass" required>
+            </div>
+            <div class="form__login--div">
+                <label for="password">Herhaal wachtwoord</label>
+                <input class="input__veld" type="password" id="pass" name="pass2" required>
+            </div>
+            <div class="form__login--div">
+                <input class="form__login--submit"type="submit" id="btn" value="Aanmelden">
+            </div>
+            <section class="form__login--section">
+                <p class="form__login--p">al een account? klik <a href="./login.php">hier</a></p>
+            </section>
             <p1 class=""><?php if(isset($_GET['error'])){ echo $_GET['error'];}?></p1>
-        </div>
-
-    </section>
+        </form>
+    </main>
 </body>
 </html>
+
