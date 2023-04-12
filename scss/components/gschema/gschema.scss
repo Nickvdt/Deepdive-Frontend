@@ -1,0 +1,47 @@
+@use "../../abstracts/colors";
+
+.gschema{
+    padding: 10rem;
+    padding-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gschema__inleiding{
+
+}
+
+.gschema__p{
+
+}
+
+.gschema__onderdeel{
+    padding-top: 2rem;
+}
+
+.gschema__h2{
+    padding-bottom: 1rem;
+}
+
+.gschema__textarea{
+    width: 100rem;
+    height:10rem;
+    font-size: 1.5rem;
+}
+
+.gschema__button{
+    height: 5rem;
+    width: 15rem;
+    background: map-get(colors.$baseColors, "background");
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.4s all;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    resize: none;
+    
+    &:hover{
+        cursor: pointer;
+        background: white;
+        color: map-get(colors.$baseColors, "background");
+    }
+}
