@@ -123,8 +123,7 @@
       </table>
     </section>
     <section id="js--nextbuttons" class="vragenlijst__buttons">
-      <button id="js--previousbutton" class="vragenlijst__button--previous">
-        < Vorige</button>
+      <button id="js--previousbutton" class="vragenlijst__button--previous">< Vorige</button>
           <button id="js--nextbutton" class="vragenlijst__button--next">Volgende ></button>
     </section>
   </section>

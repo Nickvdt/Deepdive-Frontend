@@ -11,7 +11,7 @@ class Question {
     this.HTMLNextButton = HTMLNextButton;
     this.HTMLPreviousButton.onclick = this.onPreviousClicked;
     this.HTMLNextButton.onclick = this.onNextClicked;
-    fetch("http://localhost/Deepdive-Frontend/vragen.json")
+    fetch("../vragen.json")
       .then((response) => response.json())
       .then((json) => {
         this.vragen = json;

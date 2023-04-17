@@ -1,83 +1,108 @@
 @media screen and (max-width: 75rem) {
-    .vragenlijst {
-      max-width: 80%;
-    }
+  .vragenlijst {
+    max-width: 80%;
   }
-  
-  @media screen and (max-width: 62.5rem) {
-    .vragenlijst {
-      max-width: 90%;
-      box-shadow: none;
-    }
-  }
-  
-  @media screen and (max-width: 50rem) {
-    .vragenlijst {
-      max-width: 100%;
-      padding: none;
-    }
-  }
-  
-  @media screen and (max-width: 43.75rem) {
-    .vragenlijst{
-        &__tabel{
-            &--desktop{
-                display: none;
-            }
-            &--responsive{
-                display: block;
-            }
-            & table, thead, tbody, th, td, tr{
-                display: block;
-                width: 100%;
-            }
-            & tr{
-                margin-bottom: 1.2rem;
-            }
-        }
-    }
+}
 
-  
-    @media screen and (max-width: 31.25rem) {
-      .vragenlijst {
-        &__button--previous,
-        &__button--next {
-          font-size: 2rem;
-        }
+@media screen and (max-width: 62.5rem) {
+  .vragenlijst {
+    max-width: 90%;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .vragenlijst {
+    max-width: 100%;
+    padding: none;
+
+    &__popup {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .resultaten {
+    &__tabel {
+      &--table {
+        margin-left: 0%;
+        margin-right: 0%;
       }
     }
   }
-  
+
+  @media screen and (max-width: 43.75rem) {}
+
+  .vragenlijst {
+    &__tabel {
+      &--desktop {
+        display: none;
+      }
+
+      &--responsive {
+        display: block;
+      }
+
+      & table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+        width: 100%;
+      }
+
+      & tr {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 31.25rem) {
+    .vragenlijst {
+
+      &__button--previous,
+      &__button--next {
+        font-size: 2rem;
+      }
+    }
+  }
+
+
 
   @media only screen and (max-width: 768px) {
-    .startpagina, .cards {
+
+    .startpagina,
+    .cards {
       display: block;
       height: auto;
       gap: 2rem;
       padding: 2rem;
     }
-  
-    .startpaginaItem, .card {
+
+    .startpaginaItem,
+    .card {
       margin-bottom: 5rem;
       width: 100%;
       height: auto;
       padding: 2rem;
       text-align: center;
-  
+
       &__first,
       &__second,
       &__third {
         width: 100%;
         height: auto;
       }
-  
+
       &--a {
         font-size: 1.5rem;
       }
-  
+
       .img__card {
         width: 8rem;
       }
     }
   }
-  
+}

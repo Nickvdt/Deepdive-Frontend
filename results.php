@@ -23,9 +23,33 @@ $username = $_SESSION['username'];
 
 
 <body>
-<a href="dashboard.php">dashboard</a>
-<br>
-<a href="results/vragenlijstResult.php">vragenlijst resultaten</a>
+    <header class="header">
+        <nav class="header__nav">
+            <figure class="header__figure">
+                <a class="header__a" href=""><img class="header__img" src="img/logo.webp"
+                        alt="Logo van doesburg coaching" href=""></a>
+            </figure>
+        </nav>
+    </header>
+    <ul class="cards">
+        <li class="card card__first">
+            <a href="dashboard.php" class="card__first--a">
+                <figure>
+                    <img class="img__card" src="img/lock.webp" alt="Afbeelding van een uitloggen icoon">
+                </figure>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="card card__second">
+            <a href="results/vragenlijstResult.php" class="card__second--a">
+                <figure>
+                    <img class="img__card" src="img/writing_hand.webp" alt="Afbeelding van een checklist icoon">
+                </figure>
+                <span>vragenlijst resultaten</span>
+            </a>
+        </li>
+    </ul>
 </body>
 
 </html>
