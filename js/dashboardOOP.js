@@ -69,7 +69,7 @@ class Dashboard {
           href: "results.php",
           className: "card card__third",
           aClassName: "card__third--a",
-        },
+        }
       ];
   
       items.forEach((item) => {

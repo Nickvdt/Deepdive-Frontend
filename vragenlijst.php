@@ -63,7 +63,7 @@
   <section class="vragenlijst">
     <div class="vragenlijst__buttons">
       <button class="vragenlijst__button--info" id="js--infoButton">Informatie</button>
-      <button class="vragenlijst__button--bonus">Geef extra punten</button>
+      <button id="js--extraPoints" class="vragenlijst__button--bonus">Geef extra punten</button>
     </div>
 
     <h1 id="js--vraag" class="vragenlijst__h1">Vraag: 1. Ik droom ervan zo goed te zijn in wat ik doe dat er voortdurend

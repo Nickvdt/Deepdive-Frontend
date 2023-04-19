@@ -44,6 +44,9 @@ $thirty_seven = $_GET['thirtyseven'];
 $thirty_eight = $_GET['thirtyeight'];
 $thirty_nine = $_GET['thirtynine'];
 $forty = $_GET['forty'];
+$extrapoints1 = $_GET['extrapoints1'];
+$extrapoints2 = $_GET['extrapoints2'];
+$extrapoints3 = $_GET['extrapoints3'];
 
 session_start();
 if (!isset($_SESSION['username'])) {

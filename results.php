@@ -46,7 +46,7 @@ $username = $_SESSION['username'];
                 <figure>
                     <img class="img__card" src="img/writing_hand.webp" alt="Afbeelding van een checklist icoon">
                 </figure>
-                <span>vragenlijst resultaten</span>
+                <span>Vragenlijst resultaten</span>
             </a>
         </li>
     </ul>
