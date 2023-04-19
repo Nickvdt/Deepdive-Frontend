@@ -18,6 +18,11 @@
         <a class="header__a" href=""><img class="header__img" src="img/logo.webp" alt="Logo van doesburg coaching"
             href=""></a>
       </figure>
+      <ul class="header__ul">
+        <li class="header__ul--li">
+          <a class="header__ul--a" href="dashboard.php">Dashboard</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <article class="vragenlijst__popup" id="js--popup">

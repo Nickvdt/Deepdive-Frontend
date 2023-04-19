@@ -40,6 +40,14 @@ $results = GetListAnswersByID($list, $mysqli);
             <figure class="header__figure">
                 <a class="header__a" href=""><img class="header__img" src="../img/logo.webp" alt="Logo van doesburg coaching" href=""></a>
             </figure>
+            <ul class="header__ul">
+                <li class="header__ul--li">
+                    <a class="header__ul--a" href="./vragenlijstResult.php">Resultaten</a>
+                </li>
+                <li class="header__ul--li">
+                    <a class="header__ul--a" href="../dashboard.php">Dashboard</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <section class="resultaten__tabel">

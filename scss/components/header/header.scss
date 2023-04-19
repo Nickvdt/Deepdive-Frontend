@@ -1,12 +1,38 @@
-
+@use "../../abstracts/colors";
 .header {
     width: 100%;
     margin: auto;
-    background: #19AEAA;
+    background: map-get(colors.$baseColors, "background");
     margin-bottom: 3rem;
+    &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+    }
 
     &__a{
         margin: 5rem;
     }
+
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        &--li{
+            list-style: none;
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+        &--a{
+            text-decoration: none;
+            position: relative;
+            color: map-get(colors.$baseColors, "white");
+        }
+    }
+
+    
 }
 
