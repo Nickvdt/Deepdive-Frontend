@@ -25,11 +25,16 @@ $results = GetQuestionListResultsByUserID($userid, $mysqli);
 
 
 <body>
-<header class="header">
+    <header class="header">
         <nav class="header__nav">
             <figure class="header__figure">
                 <a class="header__a" href=""><img class="header__img" src="../img/logo.webp" alt="Logo van doesburg coaching" href=""></a>
             </figure>
+            <ul class="header__ul">
+                <li class="header__ul--li">
+                    <a class="header__ul--a" href="../dashboard.php">Dashboard</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <section class="resultaten__tabel">
@@ -41,10 +46,10 @@ $results = GetQuestionListResultsByUserID($userid, $mysqli);
                 </tr>
             </thead>
             <tbody>
-              
+
                 <?php while ($row = $results->fetch_assoc()) { ?>
                     <tr>
-                        
+
                         <td><?php echo $row['id']; ?></td>
                         <td><a href="listResult.php?list=<?php echo $row['id']; ?>"><?php echo $row['date']; ?></a></td>
                     </tr>

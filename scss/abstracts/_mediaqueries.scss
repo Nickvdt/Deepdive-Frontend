@@ -9,6 +9,37 @@
     max-width: 90%;
     box-shadow: none;
   }
+  .cards {
+    display: block;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+
+  .card {
+    margin-bottom: 5rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+
+    &__first,
+    &__second,
+    &__third,
+    &__fourth {
+      width: 100%;
+      height: auto;
+    }
+
+    &--a {
+      font-size: 1.5rem;
+    }
+
+    .img__card {
+      width: 8rem;
+    }
+  }
 }
 
 @media screen and (max-width: 50rem) {
@@ -21,6 +52,7 @@
       height: 100%;
     }
   }
+
   .resultaten {
     &__tabel {
       &--table {
@@ -30,79 +62,44 @@
     }
   }
 
-  @media screen and (max-width: 43.75rem) {}
 
-  .vragenlijst {
-    &__tabel {
-      &--desktop {
-        display: none;
-      }
+@media screen and (max-width: 43.75rem) {}
 
-      &--responsive {
-        display: block;
-      }
-
-      & table,
-      thead,
-      tbody,
-      th,
-      td,
-      tr {
-        display: block;
-        width: 100%;
-      }
-
-      & tr {
-        margin-bottom: 1.2rem;
-      }
+.vragenlijst {
+  &__tabel {
+    &--desktop {
+      display: none;
     }
-  }
 
-
-  @media screen and (max-width: 31.25rem) {
-    .vragenlijst {
-
-      &__button--previous,
-      &__button--next {
-        font-size: 2rem;
-      }
-    }
-  }
-
-
-
-  @media only screen and (max-width: 768px) {
-
-    .startpagina,
-    .cards {
+    &--responsive {
       display: block;
-      height: auto;
-      gap: 2rem;
-      padding: 2rem;
     }
 
-    .startpaginaItem,
-    .card {
-      margin-bottom: 5rem;
+    & table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
       width: 100%;
-      height: auto;
-      padding: 2rem;
-      text-align: center;
+    }
 
-      &__first,
-      &__second,
-      &__third {
-        width: 100%;
-        height: auto;
-      }
-
-      &--a {
-        font-size: 1.5rem;
-      }
-
-      .img__card {
-        width: 8rem;
-      }
+    & tr {
+      margin-bottom: 1.2rem;
     }
   }
+}
+
+
+@media screen and (max-width: 31.25rem) {
+  .vragenlijst {
+
+    &__button--previous,
+    &__button--next {
+      font-size: 2rem;
+    }
+  }
+}
+
 }

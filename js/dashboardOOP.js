@@ -29,14 +29,27 @@ class Dashboard {
       image.classList = "header__img";
       image.alt = "Logo van doesburg coaching";
       image.src = "img/logo.webp";
+      const ul = document.createElement("ul");
+      ul.classList = "header__ul";
+      const li = document.createElement("li");
+      li.classList = "header__ul--li";
+      const ulLink = document.createElement("a");
+      ulLink.classList = "header__ul--a";
+      ulLink.href = "logout.php";
+      ulLink.innerText = "uitloggen"
+
   
       link.appendChild(image);
       figure.appendChild(link);
       nav.appendChild(figure);
       this.element.appendChild(nav);
+      nav.appendChild(ul);
+      ul.appendChild(li);
+      li.appendChild(ulLink);
+     
+
     }
     render() {
-      // nothing to do here
     }
   }
   
@@ -47,29 +60,37 @@ class Dashboard {
   
       const items = [
         {
-          imgSrc: "img/lock.webp",
-          imgAlt: "Afbeelding van een uitloggen icoon",
-          text: "Uitloggen",
-          href: "logout.php",
+          imgSrc: "img/thought_balloon.webp",
+          imgAlt: "Afbeelding van een denk ballon",
+          text: "Gedachten schema",
+          href: "schema.php",
           className: "card card__first",
           aClassName: "card__first--a",
+        },
+        {
+          imgSrc: "img/vertical_traffic_light.webp",
+          imgAlt: "Afbeelding van een stoplicht",
+          text: "Stress stoplicht",
+          href: "stoplicht.php",
+          className: "card card__second",
+          aClassName: "card__second--a",
         },
         {
           imgSrc: "img/writing_hand.webp",
           imgAlt: "Afbeelding van een checklist icoon",
           text: "Vragenlijst",
           href: "vragenlijst.php",
-          className: "card card__second",
-          aClassName: "card__second--a",
+          className: "card card__third",
+          aClassName: "card__third--a",
         },
         {
           imgSrc: "img/bar_chart.webp",
           imgAlt: "Afbeelding van een analyse icoon",
-          text: "Resultaten",
+          text: "Vragenlijst Resultaten",
           href: "results.php",
-          className: "card card__third",
-          aClassName: "card__third--a",
-        }
+          className: " card card__fourth",
+          aClassName: "card__fourth--a",
+        },
       ];
   
       items.forEach((item) => {
@@ -98,7 +119,7 @@ class Dashboard {
       });
     }
     render() {
-      // nothing to do here
+      
     }
   }
   

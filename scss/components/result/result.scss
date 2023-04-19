@@ -1,4 +1,5 @@
 @use "../../abstracts/animations";
+@use "../../abstracts/colors";
 .resultaten {    
     @include animations.popupMixin;
     &__tabel {
@@ -20,12 +21,12 @@
             }
 
             th {
-                background-color: #ddd;
+                background-color: map-get(colors.$baseColors, "white");
                 font-weight: bold;
             }
 
             td {
-                border: 0.1rem solid #ddd;
+                border: 0.1rem solid map-get(colors.$baseColors, "white");
             }
         }
     }
