@@ -164,16 +164,3 @@ class Question {
 
 const question = new Question(localStorage.getItem("currentquestion"), document.getElementById("js--vraag"), document.getElementById("js--previousbutton"), document.getElementById("js--nextbutton"), document.getElementById("js--extraPoints"));
 
-
-// informatie button
-const infoButton = document.getElementById('js--infoButton');
-const popup = document.getElementById('js--popup');
-const closeButton = document.getElementById('js--closeButton');
-
-infoButton.addEventListener('click', () => {
-  popup.style.display = 'block';
-});
-
-closeButton.addEventListener('click', () => {
-  popup.style.display = 'none';
-});

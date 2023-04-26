@@ -63,7 +63,7 @@ class Dashboard {
           imgSrc: "img/thought_balloon.webp",
           imgAlt: "Afbeelding van een denk ballon",
           text: "Gedachten schema",
-          href: "schema.php",
+          href: "gschema.php",
           className: "card card__first",
           aClassName: "card__first--a",
         },
