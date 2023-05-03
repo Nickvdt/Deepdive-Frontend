@@ -68,28 +68,20 @@ class Dashboard {
         aClassName: "card__first--a",
       },
       {
-        imgSrc: "img/vertical_traffic_light.webp",
-        imgAlt: "Afbeelding van een stoplicht",
-        text: "Stress stoplicht",
-        href: "stoplicht.php",
-        className: "card card__second",
-        aClassName: "card__second--a",
-      },
-      {
         imgSrc: "img/writing_hand.webp",
         imgAlt: "Afbeelding van een checklist icoon",
         text: "Vragenlijst",
         href: "vragenlijst.php",
-        className: "card card__third",
-        aClassName: "card__third--a",
+        className: "card card__second",
+        aClassName: "card__second--a",
       },
       {
         imgSrc: "img/bar_chart.webp",
         imgAlt: "Afbeelding van een analyse icoon",
         text: "Vragenlijst Resultaten",
         href: "results.php",
-        className: " card card__fourth",
-        aClassName: "card__fourth--a",
+        className: " card card__third",
+        aClassName: "card__third--a",
       },
     ];
   }
