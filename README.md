@@ -7,5 +7,5 @@ We de opdracht ontvangen van Doesburg Coaching om een interactieve website-tool 
 |------------------|--------
 | Nick van der Tol | [Trello](https://trello.com/b/b0aweqFe/deep-dive-frond-end-backlog)   
 | Yusuf Özçelik    | [Wireframe](https://xd.adobe.com/view/c6d84eac-240a-449d-8b7d-59c0232b3893-938b/grid/)   
-| Collin Veerman   | * [Ma-cloud]()  
+| Collin Veerman   | [Ma-cloud](https://30957.hosts1.ma-cloud.nl/)  
 | Tijmen Terpstra  | [Debriefing](https://docs.google.com/document/d/1fY8LBSOTLPS8kn6T1v6yOfsTMgkP6J8i3-wvdjNugCA/edit?usp=sharing) 
